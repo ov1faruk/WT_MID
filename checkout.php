@@ -54,6 +54,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <title>Checkout</title>
 </head>
 <body>
+<?php 
+		
+		include 'navbar.html';
+	 ?>
   <h1>Checkout</h1>
 
   <p><strong>Name:</strong> <?php echo $user['username']; ?></p>
