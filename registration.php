@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         if (empty($message)) {
             // Add new user to database
-            $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+            $password = $_POST['password'];
             $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
             $user = array(
                 'username' => $username,
@@ -73,7 +73,7 @@ input[type="text"],
     border: none;
     border-radius: 5px;
     background-color: #f9f9f9;
-    color: #f9f9f9;
+    color: #161616;
   }
   h1 {
     text-align: center;
